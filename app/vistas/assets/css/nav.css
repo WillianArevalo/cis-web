@@ -1,0 +1,121 @@
+/* Estilos para el botón fijo */
+.fixed-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde abajo */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 9999; /* Asegura que esté sobre otros elementos */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 50%; /* Botón redondeado */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    font-size: 20px;
+    line-height: 1.5;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+
+  /* Estilos para el icono dentro del botón */
+  .fixed-button i {
+    margin-top: 2px;
+  }
+
+
+.mobile{
+    display: none;
+}
+
+.navbar.mobile{
+    z-index: 1000;
+}
+
+@media (max-width:992px) {
+   
+    .navbar-admin{
+        width: 200px !important;
+    }
+
+    .nav-link{
+        padding: 0.5rem 0.5rem !important;
+    }
+
+    .name-user{
+        font-size: 15px !important;
+    }
+
+    .container-admin{
+        position:absolute;
+        left:200px !important;
+        width: calc(100% - 200px);
+    }
+
+    .text-header{
+        font-size: 25px !important;
+    }
+
+    .card-header >h5{
+        font-size: 20px !important;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .name-perfil{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .navbar-admin{
+        display: none;
+    }
+
+    .container-admin{
+        top:56px;
+        position:absolute;
+        left:0px !important;
+        width: calc(100% - 0px);
+    }
+
+    .toast{
+        margin-bottom: 70px !important;
+    }
+
+    .bread-cumb>nav{
+        margin-left: 10px;
+    }
+
+    .bread-cumb>p{
+        display:none;
+    }
+
+    .card{
+        width: 90% !important;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display:none;
+    }
+
+    .navbar-toggler{
+        margin-right: 20px;
+    }
+
+    .text-header{
+        font-size: 20px !important;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
