@@ -17,7 +17,7 @@ RewriteRule ^assets/(.*)$ /assets/$1 [L]
 
 # Redireccionar todas las peticiones al archivo index.php
 RewriteEngine On
-RewriteBase /cis-web/
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php/$1 [QSA,L]
 
